@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>Atmos Admin Panel- Bootstrap 4 Based Admin Panel</title>
+<link rel="icon" type="image/x-icon" href="assets/img/logo.png"/>
+<link rel="icon" href="assets/img/logo.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="assets/vendor/pace/pace.css">
+<script src="assets/vendor/pace/pace.min.js"></script>
+<!--vendors-->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+<link rel="stylesheet" type="text/css" href="assets/vendor/jquery-scrollbar/jquery.scrollbar.css">
+<link rel="stylesheet" href="assets/vendor/select2/css/select2.min.css">
+<link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.min.css">
+<link rel="stylesheet" href="assets/vendor/daterangepicker/daterangepicker.css">
+<link rel="stylesheet" href="assets/vendor/timepicker/bootstrap-timepicker.min.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,600" rel="stylesheet">
+<!--Material Icons-->
+<link rel="stylesheet" type="text/css" href="assets/fonts/materialdesignicons/materialdesignicons.min.css">
+<!--Material Icons-->
+<link rel="stylesheet" type="text/css" href="assets/fonts/feather/feather-icons.css">
+<!--Bootstrap + atmos Admin CSS-->
+<link rel="stylesheet" type="text/css" href="assets/css/atmos.min.css">
+<link rel="stylesheet" href="assets/custom css/style.css">
+<!-- Additional library for page -->
+
+
+</head>
+<body class="sidebar-pinned ">
+<aside class="admin-sidebar">
+    <div class="admin-sidebar-brand">
+        <!-- begin sidebar branding-->
+        <img class="admin-brand-logo" src="assets/img/logo.png" width="40" alt="atmos Logo">
+        <!-- end sidebar branding-->
+        <div class="ml-auto">
+            <!-- sidebar pin-->
+            <a href="#" class="admin-pin-sidebar btn-ghost btn btn-rounded-circle"></a>
+            <!-- sidebar close for mobile device-->
+            <a href="#" class="admin-close-sidebar"></a>
+        </div>
+    </div>
+    <div class="admin-sidebar-wrapper js-scrollbar">
+        <ul class="menu">
+            <li class="menu-item active ">
+                <a href="#" class="open-dropdown menu-link">
+                        <span class="menu-label">
+                                                <span class="menu-name">Dashboard
+                                                 
+                                                </span>
+
+                                            </span>
+                    <!-- <span class="menu-icon">
+                                                 <i class="icon-placeholder fe fe-activity "></i>
+                                            </span> -->
+                                        </a>
+            </li>
+            <!-- 2 -->
+            <li class="menu-item ">
+                <a href="#" class="open-dropdown menu-link">
+                        <span class="menu-label">
+                                                <span class="menu-name">Master
+                                                    <span class="menu-arrow "></span>
+                                                </span>
+
+                                            </span>
+                    <!-- <span class="menu-icon">
+                        <i class="icon-placeholder fe fe-edit "></i>
+                    </span> -->
+                </a>
+                <!--submenu-->
+                <ul class="sub-menu">
+
+                    <li class="menu-item ">
+                        <a href="LoanTypes.html" class=" menu-link">
+                                            <span class="menu-label">
+                                                <span class="menu-name">Loan Types</span>
+                                            </span>
+                            <!-- <span class="menu-icon">
+                                                <i class="icon-placeholder  fe fe-zap ">
+
+                                                </i>
+                                            </span> -->
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="Bank-Institute.html" class=" menu-link">
+                                            <span class="menu-label">
+                                                <span class="menu-name">Bank Institute</span>
+                                            </span>
+                            <!-- <span class="menu-icon">
+                                                <i class="icon-placeholder fe fe-edit-2 ">
+
+                                                </i>
+                                            </span> -->
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!-- /2 -->
+            <!-- 3 -->
+            <li class="menu-item  ">
+                <a href="Customers-page.html" class=" menu-link">
+                        <span class="menu-label">
+                                                <span class="menu-lable">Customers
+                                                 
+                                                </span>
+
+                                            </span>
+                    <!-- <span class="menu-icon">
+                                                 <i class="icon-placeholder fe fe-activity "></i>
+                                            </span> -->
+                                        </a>
+            </li>
+            <!-- /3 -->
+            <!-- 4 -->
+            <li class="menu-item  ">
+                <a href="Loan-Application-page.html" class=" menu-link">
+                        <span class="menu-label">
+                                                <span class="menu-lable">Loan Application
+                                                 
+                                                </span>
+
+                                            </span>
+                    <!-- <span class="menu-icon">
+                                                 <i class="icon-placeholder fe fe-activity "></i>
+                                            </span> -->
+                                        </a>
+            </li>
+            <!-- /4 -->
+        </ul>
+
+    </div>
+
+</aside>
+<main class="admin-main">
+    <!--site header begins-->
+<header class="admin-header">
+
+    <a href="#" class="sidebar-toggle" data-toggleclass="sidebar-open" data-target="body"> </a>
+
+    <!-- <nav class=" mr-auto my-auto">
+        <ul class="nav align-items-center">
+
+            <li class="nav-item">
+                <a class="nav-link  " data-target="#siteSearchModal" data-toggle="modal" href="#">
+                    <i class=" mdi mdi-magnify mdi-24px align-middle"></i>
+                </a>
+            </li>
+        </ul>
+    </nav> -->
+    <nav class=" ml-auto">
+        <ul class="nav align-items-center">
+
+            <li class="nav-item">
+                <div class="dropdown">
+                    <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-24px mdi-bell-outline"></i>
+                        <span class="notification-counter"></span>
+                    </a>
+
+                    <div class="dropdown-menu notification-container dropdown-menu-right">
+                        <div class="d-flex p-all-15 bg-white justify-content-between border-bottom ">
+                            <a href="#!" class="mdi mdi-18px mdi-settings text-muted"></a>
+                            <span class="h5 m-0">Notifications</span>
+                            <a href="#!" class="mdi mdi-18px mdi-notification-clear-all text-muted"></a>
+                        </div>
+                        <div class="notification-events bg-gray-300">
+                            <div class="text-overline m-b-5">today</div>
+                            <a href="#" class="d-block m-b-10">
+                                <div class="card">
+                                    <div class="card-body"> <i class="mdi mdi-circle text-success"></i> All systems operational.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="d-block m-b-10">
+                                <div class="card">
+                                    <div class="card-body"> <i class="mdi mdi-upload-multiple "></i> File upload successful.</div>
+                                </div>
+                            </a>
+                            <a href="#" class="d-block m-b-10">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <i class="mdi mdi-cancel text-danger"></i> Your holiday has been denied
+                                    </div>
+                                </div>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#"   role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <div class="avatar avatar-sm avatar-online">
+                        <span class="avatar-title rounded-circle bg-dark">V</span>
+
+                    </div>
+                </a>
+                <div class="dropdown-menu  dropdown-menu-right"   >
+                    <a class="dropdown-item" href="#">  My Account
+                    </a>
+                    <a class="dropdown-item" href="#">  Change Password</a>
+                    <a class="dropdown-item" href="#">  Help </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"> Logout</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </nav>
+</header>
+<!--site header ends -->   
+ <section class="admin-content  home-table-section">
+        <div class="container p-t-20">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <!--widget card begin-->
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col my-auto">
+                                            <div class="h6 text-muted  text-custm">Total Customer </div>
+                                        </div>
+                                        <div class="col-auto my-auto">
+                                           <div class="avatar">
+                                                <div class=" rounded-circle ">
+                                                   <img src="assets/img/logos/customer-icon.png" alt=""></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4 fw-600 text-center pt-2">160</h1>
+                                  
+                                </div>
+                            </div>
+                            <!--widget card ends-->
+
+                        </div>
+                        <div class="col-lg-3">
+                            <!--widget card begin-->
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col my-auto">
+                                            <div class="h6 text-muted text-custm  ">Total Loan Application</div>
+                                        </div>
+                                          <div class="col-auto my-auto">
+                                            <div class="avatar">
+                                                <div class=" rounded-circle ">
+                                                   <img src="assets/img/logos/loan.png" alt=""></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4 fw-600 text-center pt-2">120</h1>
+                                 
+                                </div>
+                            </div>
+                            <!--widget card ends-->
+
+                        </div>
+                        <div class="col-lg-3">
+                            <!--widget card begin-->
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col my-auto">
+                                            <div class="h6 text-muted text-custm">Total Pending Loans </div>
+                                        </div>
+                                         <div class="avatar">
+                                                <div class=" rounded-circle ">
+                                                   <img src="assets/img/logos/pendding-loan.png" alt=""></div>
+
+                                            </div>
+                                    </div>
+                                    <h1 class="display-4 fw-600 text-center pt-2">12</h1>
+                                </div>
+                            </div>
+                            <!--widget card ends-->
+
+                        </div>
+                        <!-- 4 -->
+                        <div class="col-lg-3">
+                            <!--widget card begin-->
+                            <div class="card m-b-30">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col my-auto">
+                                            <div class="h6 text-muted text-custm">Total Cash Back </div>
+                                        </div>
+                                        <div class="col-auto my-auto">
+                                            <div class="avatar">
+                                                <div class=" rounded-circle bg-none">
+                                                   <img src="assets/img/logos/refund-cashback.png" alt=""></div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h1 class="display-4 fw-600 text-center pt-2    ">120</h1>
+                                </div>
+                            </div>
+                            <!--widget card ends-->
+
+                        </div>
+                        <!-- /4 -->
+                    </div>
+                </div>
+            </div>
+            <div class="loan-section-table">
+            <div class="row">
+                <div class="col-md-12 m-b-30 ">
+                    <h5> <!-- <i class="fe fe-users"></i> -->Latest Application</h5>
+                    <div class="table-responsive">
+                        <table class="table align-td-middle table-card">
+                            <thead>
+                            <tr>
+                                <th >No.</th>
+                                <th>Application Nuber</th>
+                                <th>Name</th>
+                                <th>Pan</th>
+                                <th>Mobile</th>
+                                <th>Status</th>
+                                <th>Loan Amount</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                   <td>1</td>
+                                    <td>bfok45c7</td>
+                                    <td>Tiger Nixon</td>
+                                    <td>CPFN561DV4</td>
+                                    <td>222-111-4444</td>
+                                    <td>Rejected</td>
+                                    <td>2000</td>
+                                    <td class=""><span class="tree-doted p-3" id="tree-doted"><i class="icon mdi  mdi-dots-vertical "></i></span>
+                                        <div class=" icon-hover-box" id=" icon-hover-box">
+                                            <div class="d-flex">
+                                            <div class="p-1 icon-hover-efat "><span class="mdi mdi-eye-outline"></span></div>
+                                            <div class="p-1 icon-hover-efat "><span class="mdi mdi-pencil"></span></div>
+                                            <div class="p-1 icon-hover-efat "><span class="mdi mdi-delete-outline"></span></div>
+                                        </div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>vfok65c9</td>
+                                    <td>Shiva Patel</td>
+                                    <td>GNFN561DV4</td>
+                                    <td>233-111-4854</td>
+                                    <td>Accepted</td>
+                                    <td>8000</td>
+                                    <td><i class="icon mdi  mdi-dots-vertical"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>bcvsk45c7</td>
+                                    <td>Garrett Winters</td>
+                                    <td>MNLN561413</td>
+                                    <td>932-111-4446</td>
+                                    <td>Accepted</td>
+                                    <td>6000</td>
+                                    <td><i class="icon mdi  mdi-dots-vertical"></i></td>
+
+                                </tr>
+    
+                                <tr>
+                                    <td>4</td>
+                                    <td>bvvk4re4</td>
+                                    <td>Ashton Cox</td>
+                                    <td>VNIN561JBN2</td>
+                                    <td>211-155-4441</td>
+                                    <td>Rejected</td>
+                                    <td>10000</td>
+                                    <td><i class="icon mdi  mdi-dots-vertical"></i></td>
+
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>xco21gc7</td>
+                                    <td>Airi Satou</td>
+                                    <td>QBKN6546JM7</td>
+                                    <td>922-121-3244</td>
+                                    <td>Accepted</td>
+                                    <td>1000</td>
+                                    <td><i class="icon mdi  mdi-dots-vertical"></i>
+                                        
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>bv104542</td>
+                                    <td>Brielle 1Williamson</td>
+                                    <td>CJNN561451</td>
+                                    <td>222-111-4444</td>
+                                    <td>Accepted</td>
+                                    <td>2000</td>
+                                    <td><i class="icon mdi  mdi-dots-vertical"></i></td>
+
+                                </tr>
+                                </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+    jQuery(document).ready(function(){
+jQuery('#tree-doted').live('click', function(event) {        
+jQuery('#icon-hover-box').toggle('show');
+});
+});
+</script>
+
+<script src="assets/vendor/jquery/jquery.min.js"   ></script>
+<script src="assets/vendor/jquery-ui/jquery-ui.min.js"   ></script>
+<script src="assets/vendor/popper/popper.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/vendor/select2/js/select2.full.min.js"></script>
+<script src="assets/vendor/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+<script src="assets/vendor/listjs/listjs.min.js"></script>
+<script src="assets/vendor/moment/moment.min.js"></script>
+<script src="assets/vendor/daterangepicker/daterangepicker.js"></script>
+<script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/vendor/bootstrap-notify/bootstrap-notify.min.js"   ></script>
+<script src="assets/js/atmos.min.js"></script>
+<!--page specific scripts for demo-->
+
+<!--Additional Page includes-->
+<script src="assets/vendor/apexchart/apexcharts.min.js"></script>
+<!--chart data for current dashboard-->
+<script src="assets/js/dashboard-01.js" ></script>
+
+</body>
+</html>

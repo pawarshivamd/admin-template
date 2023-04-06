@@ -1,0 +1,71 @@
+:root{
+    --lighting-color:#E3F2FD;
+    --Theam-colour:#144272;
+}
+
+
+.loan-section-table .table-responsive .table thead tr th{
+    color: rgb(76,124,249) !important;
+    text-align: center;
+}
+.loan-section-table .table-responsive .table  tr td{
+  text-align: center;
+}
+.admin-content .card .card-body .text-custm{
+    color: rgb(76,124,249) !important;
+}
+.loan-section-table .table-responsive .table  tr td .icon-hover-box{
+    display: none;
+}
+.loan-section-table .table-responsive .table  tr td .tree-doted:hover + .icon-hover-box {
+    display: block;
+    position: absolute;
+}
+.loan-section-table .table-responsive .table  tr td .icon-hover-box .icon-hover-efat{
+    margin-inline: 1px;
+    border: 0.1px solid grey;
+    background-color:white;
+}
+.loan-section-table .table-responsive .table  tr td .icon-hover-box .icon-hover-efat span{
+    font-size: 17px;
+}
+.loan-section-table .table-responsive .table  tr td .icon-hover-box .icon-hover-efat:hover{
+    background-color:var(--lighting-color);
+}
+/* ============= loan types start ================== */
+.loan-taype-section .card .card-body .table-responsive .table thead tr th{
+    background-color: white !important; 
+    color: rgb(76,124,249) !important;
+    border-top:none ;
+    text-align: center;
+} 
+.loan-taype-section  .card .card-body .table-responsive tbody tr td{
+    text-align: center;
+} 
+.loan-taype-section .card .card-body .table-responsive tbody tr:hover{
+    background-color:var(--lighting-color);
+    cursor: pointer;
+}
+.loan-taype-section .card .card-body .table-responsive tbody tr::selection{
+    background-color:none !important;
+}
+/* ============= loan types End ================== */
+
+/* ============= Bank-Institute page statrt ================== */
+.Bank-ins-section .card .card-body .table-responsive thead tr th{
+    background-color: white !important; 
+    color: rgb(76,124,249) !important;
+    border-top:none ;
+    text-align: center;
+} 
+.Bank-ins-section .card .card-body .table-responsive tbody tr td{
+    text-align: center;
+    cursor: pointer;
+} 
+.Bank-ins-section .card .card-body .table-responsive tbody tr td .cstm-switch .cstm-switch-input:checked~.cstm-switch-indicator {
+    background: #144272;
+}
+.Bank-ins-section .card .card-body .table-responsive tbody tr:hover{
+    background-color:var(--lighting-color);
+}
+/* ============= Bank-Institute page End ================== */
